@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "akr.WPF.Controls.ColorPicker", "akr.WPF.Controls.ColorPicker\akr.WPF.Controls.ColorPicker.csproj", "{214EBE94-3AC3-4260-8664-35D803139E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "akr.WPF.Test.ColorPickerTest", "akr.WPF.Test.ColorPickerTest\akr.WPF.Test.ColorPickerTest.csproj", "{3EB617B2-EF46-4E89-8F9F-5CCDC60E1ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{214EBE94-3AC3-4260-8664-35D803139E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214EBE94-3AC3-4260-8664-35D803139E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214EBE94-3AC3-4260-8664-35D803139E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214EBE94-3AC3-4260-8664-35D803139E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB617B2-EF46-4E89-8F9F-5CCDC60E1ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB617B2-EF46-4E89-8F9F-5CCDC60E1ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB617B2-EF46-4E89-8F9F-5CCDC60E1ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB617B2-EF46-4E89-8F9F-5CCDC60E1ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {815C1AD2-768F-474A-880B-234B817B4776}
+	EndGlobalSection
+EndGlobal
