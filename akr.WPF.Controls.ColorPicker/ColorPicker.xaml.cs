@@ -422,7 +422,7 @@ namespace akr.WPF.Controls
 
             if (doUpdateSpectrumSliderValue)
             {
-                currentSpectrumValue = 360 - hsv.H;
+                currentSpectrumValue = hsv.H;
                 CurrentViewColor.SetH(hsv.H);
                 UpdateColorCircleSelectorPosition(hsv.H);
             }
@@ -522,6 +522,11 @@ namespace akr.WPF.Controls
         {
             var canvas = sender as Canvas;
             canvas.ReleaseMouseCapture();
+        }
+
+        private void CircleCanvas_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            UpdateColorCircleSelectorPosition(currentSpectrumValue);
         }
 
         private void UpdateColorCircleSelectorPositionAndCalculateColor(Canvas canvas, Point p, bool calculateColor)
@@ -640,8 +645,9 @@ namespace akr.WPF.Controls
         }
         private void CalculateColor(Point p)
         {
-            HsvColor hsv = new HsvColor(360 - currentSpectrumValue, 1, 1)
+            HsvColor hsv = new HsvColor()
             {
+                H = currentSpectrumValue,
                 S = p.X,
                 V = 1 - p.Y
             };
@@ -700,7 +706,6 @@ namespace akr.WPF.Controls
 
 
         #endregion //Methods
-
     }
 
     public class ViewColor : INotifyPropertyChanged
