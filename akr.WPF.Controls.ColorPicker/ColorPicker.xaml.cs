@@ -431,8 +431,8 @@ namespace akr.WPF.Controls
 
             currentColorShadePosition = p;
 
-            colorShadeSelectorTransform.X = (p.X * ColorShadingCanvas.ActualWidth) - (ColorShadeSelector.Width / 2);
-            colorShadeSelectorTransform.Y = (p.Y * ColorShadingCanvas.ActualHeight) - (ColorShadeSelector.Height / 2);
+            colorShadeSelectorTransform.X = (p.X * ColorShadingCanvas.Width) - (ColorShadeSelector.Width / 2);
+            colorShadeSelectorTransform.Y = (p.Y * ColorShadingCanvas.Height) - (ColorShadeSelector.Height / 2);
         }
 
 
